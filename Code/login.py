@@ -1,5 +1,5 @@
-from encrypt_pass import encrypt_password
-from check_username import check_password
+from encrypt_password import encrypt_password
+from check_information import check_password
 
 
 

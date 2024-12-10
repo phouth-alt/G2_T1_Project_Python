@@ -1,5 +1,5 @@
 #import encrypt password modual
-from encrypt_pass import encrypt_password
+from encrypt_password import encrypt_password
 #Create Save to file function for save username, password, phone number to datadbase
 def save_to_file(username,password,phone):
         try:

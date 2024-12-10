@@ -1,6 +1,6 @@
-from encrypt_pass import encrypt_password
-from check_username import check_user
-from pass_strength import pass_strength
+from encrypt_password import encrypt_password
+from check_information import check_user
+from password_strength import pass_strength
 #Function to reset password that require username and old password
 def reset_pass(username,password):
     try:
@@ -21,9 +21,7 @@ def reset_pass(username,password):
                 parts = line.strip().split("\t\t")
                 if len(parts) > 2 and parts[0] == username:
                         parts[2][username] = password
-        with open(file_path,'w') as file:
-            for line in updated_lines:
-                file.write(line + "\n")
+    
                 print("Password updated successfully!")
     except Exception as e:
         print("An error occurred:{}".format(e))

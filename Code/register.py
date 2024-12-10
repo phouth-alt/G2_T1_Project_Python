@@ -1,6 +1,6 @@
 #import modual from another file
-from check_username import check_username
-from pass_strength import pass_strength
+from check_information import check_username
+from password_strength import pass_strength
 from save_to_file import save_to_file
 #Create register function that required username, password, phone number
 def register(username,password,phone):

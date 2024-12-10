@@ -1,5 +1,5 @@
-from registration import register
-from resetpass import reset_pass
+from register import register
+from reset import reset_pass
 from login import login
 class AuthenticationSystem:
     def Options(self):

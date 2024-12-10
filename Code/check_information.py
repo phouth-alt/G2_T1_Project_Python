@@ -1,4 +1,4 @@
-from encrypt_pass import encrypt_password
+from encrypt_password import encrypt_password
 #Create function for check if user already have account by using phone number
 def check_username(phone):
      try:
