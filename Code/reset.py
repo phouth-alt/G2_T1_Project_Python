@@ -25,5 +25,5 @@ def reset_pass(username,password):
                 print("Password updated successfully!")
     except Exception as e:
         print("An error occurred:{}".format(e))
-
-reset_pass("Phan Phouth","UareMYfarVoritH00@")
+if __name__ == "__main__":
+    reset_pass("Phan Phouth","UareMYfarVoritH00@")

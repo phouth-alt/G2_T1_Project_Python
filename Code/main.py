@@ -1,5 +1,5 @@
 from register import register
-from reset import reset_pass
+#from reset import reset_pass
 from login import login
 class AuthenticationSystem:
     def Options(self):
@@ -25,9 +25,7 @@ class AuthenticationSystem:
                     print("Login agian")
                 print("\n")
             elif input_options == '2':
-                first_name = input("First name:").strip()
-                last_name = input("Last name: ").strip()
-                username = first_name + " " + last_name
+                username = input("username : ")
                 password = input("Enter password:").strip()
                 phone = input("phone number: ").strip()
                 register(username,password,phone)
