@@ -8,7 +8,7 @@ def save_to_file(username,password,phone):
             #Nested dictionary for store data in short period(Ex:{username:{phone:password}})
             data_dict = {}
             data_dict[username] = {phone : password}
-            file_path = "D:\G2_T1_Project\Data\data.txt"
+            file_path = "D:\G2_T1_Project_Python\Database\database.txt"
             #Open file to append data
             with open(file_path, "a") as file:
                 for username, details in data_dict.items():
@@ -17,4 +17,7 @@ def save_to_file(username,password,phone):
             print("your registration completed.")
         except IOError as e: 
              print("File error: {}".format(e))
-        
+
+#test function block     
+if __name__ == "__main__":
+     save_to_file("phanphouth","usenn0398U@",855976899776)         

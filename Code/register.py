@@ -9,7 +9,7 @@ def register(username,password,phone):
         print("Error : All fields (username, password, phone) are required.")
         return
     #check if user already has account or new user by phone number
-    if check_username(phone) == True:
+    if check_username(phone):
         print("your alread have an account. please login")
         return
     #check Password Strength when user register
@@ -17,3 +17,6 @@ def register(username,password,phone):
         return
     #save username, password, phone number to database
     save_to_file(username,password,phone)
+
+if __name__ == "__main__":
+    register("phanphouth","kshjdUlje0399@",+855976899776)
