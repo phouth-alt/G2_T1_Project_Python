@@ -18,6 +18,23 @@ def save_to_file(username,password,phone):
         except IOError as e: 
              print("File error: {}".format(e))
 
+
+def update_password(new_password):
+    try:
+        file_path = "D:\G2_T1_Project_Python\Database\database.txt"
+        with open(file_path,'a') as file:
+            for line in file:
+                 parts = line.strip().split("\t\t")
+                 username = parts[0]
+                 phone = parts[1]
+                 if len(parts) == 3:
+                      username, phone , new_password = parts
+                      file.writelines(parts)
+    except Exception as e:
+        print("An error occurred:{}".format(e))
+
+
 #test function block     
 if __name__ == "__main__":
-     save_to_file("phanphouth","usenn0398U@",855976899776)         
+     #save_to_file("phanphouth","usenn0398U@",855976899776)  
+     update_password("UareMYfarVoritH00@")       

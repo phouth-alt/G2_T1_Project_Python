@@ -25,14 +25,19 @@ def check_username(phone):
 #check user function use when user loginto account that already exist
 def check_user(username,password):
      try:
+          #hashing password
           en_password = encrypt_password(password)
-          file_path = "D:\G2_T1_Project\Data\data.txt"
+          #open database file
+          file_path = "D:\G2_T1_Project_Python\Database\database.txt"
           with open(file_path, 'r') as file:
                for line in file:
                     parts = line.strip().split("\t\t")
+                    #check length of parts
                     if len(parts) > 2:
                          #compair part1 that is username and part3 is password 
-                         if parts[0].strip() == username and parts[2].strip() == en_password:
+                         username_in_database = parts[0]
+                         password_in_database = parts[2]
+                         if username_in_database == username and password_in_database == en_password:
                               return True
           return False
      except FileNotFoundError:
@@ -59,3 +64,4 @@ def check_password(username,password):
 
 if __name__ == "__main__":
      print(check_username(855976899776))
+     print(check_user("phanphouth","usenn0398U@"))

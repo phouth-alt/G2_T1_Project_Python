@@ -1,5 +1,5 @@
 from register import register
-#from reset import reset_pass
+from reset import reset_pass
 from login import login
 class AuthenticationSystem:
     def Options(self):
@@ -33,8 +33,9 @@ class AuthenticationSystem:
 
             elif input_options == '3':
                 username = input("Enter username: ")
-                password = input("Enter password: ")
-                reset_pass(username,password)
+                password = input("Enter current password: ")
+                new_password = input("Enter new password:")
+                reset_pass(username,password,new_password)
                 print("\n")
 
             elif input_options == '4':
