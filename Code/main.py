@@ -30,7 +30,7 @@ class AuthenticationSystem:
                 phone = input("phone number: ").strip()
                 register(username,password,phone)
                 print("\n")
-
+              
             elif input_options == '3':
                 username = input("Enter username: ")
                 password = input("Enter current password: ")

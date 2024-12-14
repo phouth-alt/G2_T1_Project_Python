@@ -32,7 +32,7 @@ def check_user(username,password):
           with open(file_path, 'r') as file:
                for line in file:
                     parts = line.strip().split("\t\t")
-                    #check length of parts
+                    #check length of parts                 
                     if len(parts) > 2:
                          #compair part1 that is username and part3 is password 
                          username_in_database = parts[0]

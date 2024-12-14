@@ -5,7 +5,7 @@ from save_to_file import save_to_file
 #Create register function that required username, password, phone number
 def register(username,password,phone):
     #username, password,phone number should fields if not it will return
-    if not username or not password or not phone:
+    if not username or not password or not phone:       
         print("Error : All fields (username, password, phone) are required.")
         return
     #check if user already has account or new user by phone number

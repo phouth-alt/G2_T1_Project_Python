@@ -14,7 +14,7 @@ def save_to_file(username,password,phone):
                 for username, details in data_dict.items():
                     for phone, password in details.items():
                         file.write('%s\t\t%s\t\t%s\n' %(username,phone, password))
-            print("your registration completed.")
+            print("your registration completed.")    
         except IOError as e: 
              print("File error: {}".format(e))
 

@@ -22,7 +22,7 @@ def pass_strength(password):
         elif not re.search("[!@#$%^&*()]",password):
             print("Password Must contain at least one special character(!@#$%^&*()).")
             return False
-        #check if password has white space return False
+               #check if password has white space return False
         elif re.search("\s",password):
             print("Password Must not contain whitespace.")
             return False

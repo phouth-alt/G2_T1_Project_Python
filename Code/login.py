@@ -1,5 +1,5 @@
 from encrypt_password import encrypt_password
-from check_information import check_password
+from check_information      import check_password
 
 
 
