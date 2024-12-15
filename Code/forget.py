@@ -1,8 +1,7 @@
 def recover_password(username, key_pin, new_password):  
     """Recover a user's password using the key pin."""  
     users = []  
-    user_found = False  
-
+    user_found = False
     try:  
         with open('users.txt', 'r') as file:  
             users = file.readlines()  
