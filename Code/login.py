@@ -1,24 +1,32 @@
 from encrypt_password import encrypt_password
-from login_check import check_password
-
-attempt = 0
-max_attempt = 3
-def create_user(username, password):
-    file_path = "data.txt"
-    try:
-        en_password = encrypt_password(password)
-        with open(file_path, "a") as file:  # 'a' mode appends to the file
-            file.write(f"{username}\t{en_password}\n")
-        print("User created successfully.")
-    except IOError:
-        print("An error occurred while writing to the file.")
+from login_check import check_user
 
 def login(username, password):
-    while attempt < max_attempt:    
-        if check_password(username, password):
-            return True
-        else:
-            attempt += 1
-            remaining = max_attempt - attempt
-            print("Invalid username or password. Please try again within remaining {remaining} attempt left.")
-            return False
+    """
+    Attempts to log in a user by checking their username and password.
+    """
+    try:
+        attempts = 0
+        max_attempts = 3
+
+        while attempts < max_attempts:
+            if check_user(username, encrypt_password(password)):
+                print("Login successful!")
+                return True  # Successfully logged in
+            else:
+                attempts += 1
+                print("Invalid credentials. Attempt {} of {}.".format(attempts, max_attempts))
+
+                if attempts < max_attempts:
+                    username = input("Enter username again: ")
+                    password = input("Enter password again: ")
+
+        print("Too many failed attempts. Access denied.")
+        return False  # Login failed
+
+    except Exception as e:
+        print("An error occurred: {}".format(e))
+        return False
+
+if __name__ == "__main__":
+    login("vuth","UareMYfarVoritH00@")

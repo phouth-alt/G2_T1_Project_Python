@@ -2,7 +2,7 @@ from encrypt_password import encrypt_password
 #check password function use for reset password that need username and password
 def check_password(username,password):
           try:
-               file_path = "D:\G2_T1_Project\Data\data.txt"
+               file_path = "D:\G2_T1_Project_Python\Database\database.txt"
                en_password = encrypt_password(password)
                with open(file_path, "r") as file:
                     for line in file:
@@ -19,4 +19,4 @@ def check_password(username,password):
                return False
 
 if __name__ == "__main__":
-      print(check_password("phanphouth","UareMYfarVoritH00@"))
+     print(check_password("vuth","UareMYfarVoritH00@"))
