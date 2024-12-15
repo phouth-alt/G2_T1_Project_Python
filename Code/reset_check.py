@@ -17,3 +17,6 @@ def check_password(username,password):
           except IOError:
                print("An error occurred while reading the file.")
                return False
+
+if __name__ == "__main__":
+      print(check_password("phanphouth","UareMYfarVoritH00@"))
