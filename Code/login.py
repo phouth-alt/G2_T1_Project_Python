@@ -10,7 +10,7 @@ def login(username, password):
         max_attempts = 3
 
         while attempts < max_attempts:
-            if check_user(username, encrypt_password(password)):
+            if check_user(username,password):
                 print("Login successful!")
                 return True  # Successfully logged in
             else:
@@ -29,4 +29,4 @@ def login(username, password):
         return False
 
 if __name__ == "__main__":
-    login("vuth","UareMYfarVoritH00@")
+    login("phouth","UareMYfarVoritH00@")
