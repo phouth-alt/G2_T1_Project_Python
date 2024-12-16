@@ -4,7 +4,7 @@ from encrypt_password import encrypt_password
 # Check password function for reset password that requires username and password
 def check_password(username, password):
     try:
-        file_path = "D:\G2_T1_Project_Python\Database\database.tx"
+        file_path = "D:\G2_T1_Project_Python\Database\database.txt"
         # Encrypt the provided password
         en_password = encrypt_password(password)
         
