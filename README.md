@@ -48,10 +48,15 @@ pip install hashlib
 python main.py
 ```
 2. Follow the on-screen menu to perform the desired operations:
+
 -Login: Enter your username and password.
+
 -Register: Provide your username, password, and phone number.
+
 -Reset Password: Enter your current credentials and set a new password.
+
 -Forget Password: Use your phone number to recover your account.
+
 
 ## Security Measures
 
