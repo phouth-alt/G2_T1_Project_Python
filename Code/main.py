@@ -1,6 +1,9 @@
 from register import register
 from reset import reset_pass
 from login import login
+from forget import recover_password
+from generateOTP import generate_alphanumeric_otp
+from update_password import update_password
 class AuthenticationSystem:
     def Options(self):
         while True:
@@ -40,7 +43,15 @@ class AuthenticationSystem:
                 print("\n")
 
             elif input_options == '4':
-                print("\nLogin functionality is under development.\n")
+                phone = input("phone number :")
+                if recover_password(phone):
+                    generate_alphanumeric_otp
+                    input_OTP = input("Enter your OTP: ")
+                    if input_OTP == generate_alphanumeric_otp:
+                        new_password = input("new password: ")
+                        update_password(phone,new_password)
+                else:
+                    print("you didn't have account yet.")
                 print("\n")
 
             elif input_options == '5':
