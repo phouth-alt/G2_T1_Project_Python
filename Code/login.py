@@ -11,7 +11,6 @@ def login(username, password):
 
         while attempts < max_attempts:
             if check_user(username,password):
-                print("Login successful!")
                 return True  # Successfully logged in
             else:
                 attempts += 1
