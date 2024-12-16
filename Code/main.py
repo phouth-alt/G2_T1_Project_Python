@@ -4,6 +4,8 @@ from login import login
 from forget import recover_password
 from generateOTP import generate_alphanumeric_otp
 from update_password import update_password
+from encrypt_password import encrypt_password
+from password_strength import pass_strength
 class AuthenticationSystem:
     def Options(self):
         while True:
@@ -45,11 +47,14 @@ class AuthenticationSystem:
             elif input_options == '4':
                 phone = input("phone number :")
                 if recover_password(phone):
-                    generate_alphanumeric_otp
+                    otp = generate_alphanumeric_otp()
+                    print("Your secure alphanumeric OTP is:{}".format(otp))
                     input_OTP = input("Enter your OTP: ")
-                    if input_OTP == generate_alphanumeric_otp:
+                    if input_OTP == otp:
                         new_password = input("new password: ")
-                        update_password(phone,new_password)
+                        if pass_strength(new_password):
+                            new_password = encrypt_password(new_password)
+                            update_password(phone,new_password)
                 else:
                     print("you didn't have account yet.")
                 print("\n")
