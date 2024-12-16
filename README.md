@@ -1,6 +1,6 @@
-# G2_T1_Project_Python
-# User Authentication system
-# Introduction
+## G2_T1_Project_Python
+## User Authentication system
+## Introduction
 The User Authentication System is a Python-based application designed to handle user registration, login, password reset, and recovery functionalities. It ensures secure access management through encrypted passwords, password strength validation, and OTP-based recovery mechanisms.
 
 ## Features
