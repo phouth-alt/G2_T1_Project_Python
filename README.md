@@ -41,24 +41,6 @@ pip install string
 pip install re
 pip install hashlib
 ```
-## Project Structure
-
-G2_T1_Project_Python/
-    |
-    |--Code
-        |-- main.py                  # Main entry point of the program
-        |-- register.py              # Module for user registration
-        |-- reset.py                 # Module for resetting passwords
-        |-- login.py                 # Module for login functionality
-        |-- forget.py                # Module for account recovery
-        |-- generateOTP.py           # Function to generate OTPs
-        |-- update_password.py       # Module to update passwords
-        |-- encrypt_password.py      # Function to encrypt passwords
-        |-- password_strength.py     # Function to validate password strength
-    |-- Database/
-        |-- database.txt         # File to store user data (replace with DB in production)
-    |
-    |--README.md
 
 ## Usage
 1. Run the program
