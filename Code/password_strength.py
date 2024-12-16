@@ -33,7 +33,9 @@ def pass_strength(password):
         
 #test
 if __name__ == "__main__":
-     pass_strength("iloveyoubaby")
-     pass_strength("Iloveubaby")
-     pass_strength("1lovEubaby")
-     print(pass_strength("1loveUb@by"))
+    pass_strength("oejoe")
+    pass_strength("UULDOJDUJD")
+    pass_strength("iloveyoubaby")
+    pass_strength("Iloveubaby")
+    pass_strength("1lovEubaby")
+    pass_strength("Us#lsoj #jdej")     

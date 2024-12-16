@@ -74,6 +74,7 @@ class AuthenticationSystem:
                         if pass_strength(new_password):
                             new_password = encrypt_password(new_password)  # Encrypt the new password
                             update_password(phone, new_password)  # Update the password in the system
+
                 else:
                     print("You don't have an account yet.")  # Error message for invalid phone number
                 print("\n")  # Blank line for spacing
