@@ -21,13 +21,13 @@ def update_password(phone,new_password):
         # Replace the original file with the updated file
         if updated:
             os.replace(temp_file_path, file_path)
-            print(f"Password updated successfully for phone number: {phone}")
+            print("Password updated successfully for phone number: {}".format(phone))
         else:
             os.remove(temp_file_path)
-            print(f"Phone number '{phone}' not found.")
+            print("Phone number '{}' not found.".format(phone))
     
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print("An error occurred: {}".format(e))
 
 if __name__ == "__main__":
     update_password(85510686710, "UareMYfarvoritH00")
