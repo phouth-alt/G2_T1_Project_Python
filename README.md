@@ -12,7 +12,7 @@ The User Authentication System is a Python-based application designed to handle 
 6.Password Strength Validation: Validates that passwords meet complexity requirements.
 6.OTP Generation: Provides secure alphanumeric OTP for authentication during recovery.
 
-### Prerequisites
+## Prerequisites
 -Python 3.7+: Ensure Python is installed on your system.
 -Modules/Functions used in the system:
     -register: Handles user registration.
@@ -24,7 +24,7 @@ The User Authentication System is a Python-based application designed to handle 
     -encrypt_password: Encrypts passwords before storage.
     -pass_strength: Checks the strength of new passwords.
 
-#### Installation 
+## Installation 
 1. Clone the repository:
 ```bash
 git clone https://github.com/phouth-alt/G2_T1_Project_Python.git
@@ -42,7 +42,7 @@ pip install re
 pip install hashlib
 ```
 
-##### Usage
+## Usage
 1. Run the program
 ```bash
 python main.py
@@ -53,7 +53,7 @@ python main.py
 -Reset Password: Enter your current credentials and set a new password.
 -Forget Password: Use your phone number to recover your account.
 
-###### Security Measures
+## Security Measures
 
 1. Password Encryption:
 -All passwords are encrypted before storage to prevent unauthorized access.
@@ -64,13 +64,13 @@ python main.py
 4. Input Validation:
 -Validates user inputs (e.g., phone numbers, usernames) to prevent injection attacks.
 
-######## Future Improvements
+### Future Improvements
 -Integrate with a database for better scalability.
 -Implement email-based OTPs for account recovery.
 -Add rate-limiting to prevent brute force attacks.
 -Introduce logging for audit trails and error monitoring.
 
-####### Contributing
+### Contributing
 Contributions are welcome! Please follow these steps:
 1.Fork the repository.
 2.Create a feature branch:
@@ -80,7 +80,7 @@ git checkout -b feature-name
 4.Commit your changes and push to your fork.
 4Open a pull request.
 
-# Contact
+### Contact
 For any questions or issues, please contact:
 Your Name: your.email@example.com
 [GitHub Repository](https://github.com/phouth-alt/G2_T1_Project_Python.git)
