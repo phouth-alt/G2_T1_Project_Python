@@ -25,12 +25,16 @@ class AuthenticationSystem:
             print("--------------------------------------------")
             print("-------------Enter an option----------------")
             print("--------------------------------------------")
+    
             
             # Get the user's choice
-            input_options = input("").strip()
+            input_options = input(":").strip()
             
             # Option 1: Login
             if input_options == '1':
+                print("--------------------------------------------")
+                print("----------------login account---------------")
+                print("--------------------------------------------")
                 username = input("Username: ").strip()  # Input for username
                 password = input("Enter password:").strip()  # Input for password
                 # Call the login function and check if it succeeds
@@ -42,6 +46,9 @@ class AuthenticationSystem:
             
             # Option 2: Register
             elif input_options == '2':
+                print("--------------------------------------------")
+                print("---------------Create account---------------")
+                print("--------------------------------------------")
                 username = input("Username: ").strip()  # Input for username
                 password = input("Enter password: ").strip()  # Input for password
                 phone = input("Phone number: ").strip()  # Input for phone number
@@ -51,6 +58,9 @@ class AuthenticationSystem:
             
             # Option 3: Reset Password
             elif input_options == '3':
+                print("--------------------------------------------")
+                print("---------------Reset password---------------")
+                print("--------------------------------------------")
                 username = input("Enter username: ").strip()  # Input for username
                 phone = input("Phone number: ").strip()  # Input for phone number
                 password = input("Enter current password: ").strip()  # Input for current password
@@ -61,6 +71,9 @@ class AuthenticationSystem:
             
             # Option 4: Forget Password
             elif input_options == '4':
+                print("--------------------------------------------")
+                print("--------------Recover password--------------")
+                print("--------------------------------------------")
                 phone = input("Phone number: ").strip()  # Input for phone number
                 # Call the recover_password function
                 if recover_password(phone):  # If recovery is successful
