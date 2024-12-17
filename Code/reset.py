@@ -15,10 +15,10 @@ def reset_pass(username,password,phone,new_password):
             new_password = encrypt_password(new_password)
             update_password(phone,new_password)
         else:
-            print("Please try again")
+            print("\tPlease try again")
             return
     except Exception as e:
-        print("An error occurred:{}".format(e))
+        print("\tAn error occurred:{}".format(e))
 
 
 

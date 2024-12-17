@@ -18,10 +18,10 @@ def check_password(username, password):
         return False
     
     except FileNotFoundError:
-        print("Error: File not found. Please ensure the database exists.")
+        print("\tError: File not found. Please ensure the database exists.")
         return False
     except IOError:
-        print("An error occurred while accessing the file.")
+        print("\tAn error occurred while accessing the file.")
         return False
 
 if __name__ == "__main__":

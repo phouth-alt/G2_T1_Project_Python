@@ -18,4 +18,4 @@ def check_user(username,password):
                               return True
           return False
      except FileNotFoundError:
-        print("Error: File not found at {}".format(file_path))
+        print("\tError: File not found at {}".format(file_path))

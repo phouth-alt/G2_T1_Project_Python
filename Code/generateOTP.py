@@ -13,4 +13,4 @@ def generate_alphanumeric_otp(length=6):
 
 # Example usage
 if __name__ == "__main__":
-    print("Your secure alphanumeric OTP is:", generate_alphanumeric_otp())
+    print("\tYour secure alphanumeric OTP is:", generate_alphanumeric_otp())

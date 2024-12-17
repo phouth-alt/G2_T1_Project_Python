@@ -21,7 +21,7 @@ def check_username(phone):
           return False
      #if file not found it will show a message
      except FileNotFoundError:
-        print("Error: File not found at {}".format(file_path))
+        print("\tError: File not found at {}".format(file_path))
 
 if __name__ == "__main__":
      print(check_username(855976899776))

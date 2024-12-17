@@ -14,17 +14,17 @@ def login(username, password):
                 return True  # Successfully logged in
             else:
                 attempts += 1
-                print("Invalid credentials. Attempt {} of {}.".format(attempts, max_attempts))
+                print("\tInvalid credentials. Attempt {} of {}.".format(attempts, max_attempts))
 
                 if attempts < max_attempts:
-                    username = input("Enter username again: ")
-                    password = input("Enter password again: ")
+                    username = input("\tEnter username again: ")
+                    password = input("\tEnter password again: ")
 
-        print("Too many failed attempts. Access denied.")
+        print("\tToo many failed attempts. Access denied.")
         return False  # Login failed
 
     except Exception as e:
-        print("An error occurred: {}".format(e))
+        print("\tAn error occurred: {}".format(e))
         return False
 
 if __name__ == "__main__":
