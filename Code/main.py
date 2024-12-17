@@ -25,7 +25,7 @@ class AuthenticationSystem:
             print("\t--------------------------------------------")
             print("\t-----------Enter an option(1-5)-------------")
             print("\t--------------------------------------------")
-    
+
             
             # Get the user's choice
             input_options = input("\t:").strip()
@@ -88,7 +88,8 @@ class AuthenticationSystem:
                         if pass_strength(new_password):
                             new_password = encrypt_password(new_password)  # Encrypt the new password
                             update_password(phone, new_password)  # Update the password in the system
-
+                    else:
+                        print("\tincorrect OTP")
                 else:
                     print("\tYou don't have an account yet.")  # Error message for invalid phone number
                 print("\n")  # Blank line for spacing
