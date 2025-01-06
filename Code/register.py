@@ -8,6 +8,8 @@ def register(username,password,phone):
     if not username or not password or not phone:       
         print("\tError : All fields (username, password, phone) are required.")
         return
+    if len(phone) < 12 :
+        return
     #check if user already has account or new user by phone number
     if check_username(phone):
         print("\tyour alread have an account. please login")

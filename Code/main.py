@@ -5,7 +5,7 @@ from forget import recover_password  # Module for password recovery
 from generateOTP import generate_alphanumeric_otp  # Function to generate secure OTP
 from update_password import update_password  # Module to update user's password
 from encrypt_password import encrypt_password  # Function to encrypt passwords
-from password_strength import pass_strength  # Function to check password strength
+from password_strength import password_strength  # Function to check password strength
 
 # Main class for the authentication system
 class AuthenticationSystem:
@@ -85,7 +85,7 @@ class AuthenticationSystem:
                         new_password = input("\tNew password: ").strip()  # Input for new password
 
                         # Check the strength of the new password
-                        if pass_strength(new_password):
+                        if password_strength(new_password):
                             new_password = encrypt_password(new_password)  # Encrypt the new password
                             update_password(phone, new_password)  # Update the password in the system
                     else:
