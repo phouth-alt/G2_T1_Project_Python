@@ -30,7 +30,7 @@ class AuthenticationSystem:
             # Get the user's choice
             input_options = input("\t:").strip()
             
-            # Option 1: Login
+             # Option 1: Register
             if input_options == '1':
                 print("\t--------------------------------------------")
                 print("\t---------------Create account---------------")
@@ -42,7 +42,7 @@ class AuthenticationSystem:
                 register(username, password, phone)
                 print("\n")  # Blank line for spacing
             
-            # Option 2: Register
+            # Option 2: Login
             elif input_options == '2':
                 print("\t--------------------------------------------")
                 print("\t----------------login account---------------")
